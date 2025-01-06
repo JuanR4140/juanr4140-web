@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <meta http-equiv="Cache-Control" content="max-age=86400">
+  <!--<meta name="author" content="juanr4140.com">
+  <meta name="description" content="mom look i have my own website!">
+  <meta name="image" content="media/images/pfp.png">-->
+
+  <title>JuanR4140</title>
+  <meta property="og:title" content="JuanR4140">
+  <meta name="twitter:title" content="JuanR4140">
+
+  <meta prperty="og:type" content="website">
+  <meta property="og:url" content="https://newsitetest.juanr4140.repl.co">
+
+  <meta name="description" content="mom look i have my own website!">
+  <meta property="og:description" content="mom look i have my own website!">
+  <meta name="twitter:title" content="mom look i have my own website!">
+
+  <meta property="og:image" content="/media/images/pfp.png">
+  <meta name="twitter:image" content="/media/images/pfp.png">
+  
+  <link rel="icon" type="image/x-icon" href="/media/images/pfp.png">
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <div id="cover" style="z-index: 100; position: absolute; width: 100%; height: 0%;"></div>
+  <img id="icon" style="border-radius: 50%; z-index: 101; position: absolute; width: 0px; height: 0px; top: 50%; right: 50%; margin-top: -50px; margin-right: -50px;">
+
+  
+  <div style="text-align: right;">
+    <img alt="Icon for theme switching" class="icon" id="theme" src="media/images/theme.png" width="25" height="25" style="position: relative; left: -20px; cursor: pointer;">
+  </div>
+
+  <div style="text-align: center;">
+    <a class="link" data-color="user" data-icon="media/images/pfp.png"
+        href="thought/2023/12/27.html">Now hosted on a VPS from BuyVM/Frantech!<br>(Read to find out why)</a><br><br>
+  </div><br>
+  
+  <div class="card">
+    <div id="top">
+      <div style="text-align: center;">
+        <br>
+        <img alt="Image of user's Profile picture" class="pfp" src="media/images/pfp.png" height="100" width="100" style="border-radius: 50%; margin: 0">
+        <h2 id="user" style="margin: 0;">JuanR4140</h2>
+        <input id="contact" type="button" value="Contact Me">
+      </div><br>
+
+      <div id="socials" style="display: none;">
+        <div style="position: relative; top: -20px;">
+          <img alt="Icon of Discord's logo" class="icon" style="float: left; padding-right: 10px;" src="media/images/discord.png" width="25" height="25">
+          <h4 style="position: relative; top: 5px;">JuanR4140#0242</h4>
+        </div>
+        <div style="position: relative; top: -30px;">
+          <img alt="Icon of Instagram's logo" class="icon" style="float: left; padding-right: 10px;" src="media/images/instagram.png" width="25" height="25">
+          <h4 style="position: relative; top: 5px;"><a class="link" data-color="#E95950" data-icon="media/icons/instagram.png" href="https://instagram.com/juanr4140" target="_blank">juanr4140</a></h4>
+        </div>
+        <div style="position: relative; top: -40px;">
+          <img alt="Icon of Twitter's logo" class="icon" style="float: left; padding-right: 10px;" src="media/images/twitter.png" width="25" height="25">
+          <h4 style="position: relative; top: 5px;"><a  class="link" data-color="#1DA1F2" data-icon="media/icons/twitter.png" href="https://twitter.com/juanr4140" target="_blank">juanr4140</a></h4>
+        </div>
+      </div>
+
+      <div id="content" style="display: block;">
+        <div>
+          <div style="position: relative; top: -20px;">
+            <img alt="Icon of a suitcase" class="icon" style="float: left; padding-right: 10px;" src="media/images/suitcase.png" width="25" height="25">
+            <h4 style="position: relative; top: 5px;">High school sophomore</h4>
+          </div>
+          <div style="position: relative; top: -30px;">
+            <img alt="Icon of a home" class="icon" style="float: left; padding-right: 10px;" src="media/images/home.svg" width="25" height="25">
+            <h4 style="position: relative; top: 5px;">Lives in the United States</h4>
+          </div>
+          <div style="position: relative; top: -40px;">
+            <img alt="Icon of a location pinpoint" class="icon" style="float: left; padding-right: 10px;" src="media/images/location.svg" width="25" height="25">
+            <h4 style="position: relative; top: 5px;">From Texas, United States</h4>
+          </div>
+        </div>
+        
+        <div style="text-align: center; position: relative; top: -20px;">
+          <div class="bar black">
+            <button class="bar-item btn" onclick="switchTab('about')">About</button>
+            <button class="bar-item btn" onclick="switchTab('creations')">Creations</button>
+            <button class="bar-item btn" onclick="switchTab('thoughts')">Thoughts</button>
+          </div>
+        </div>
+          
+        <div id="about" class="section">
+          <h2 style="text-align: center;">About</h2>
+          <!--<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit dolores eveniet architecto excepturi reprehenderit iusto esse sapiente corporis ducimus itaque dolorum eius molestias minus sequi rem quisquam porro, maiores voluptatibus.</p>-->
+          <p>Hey! I'm JuanR4140, or Juan! I am currently a high-school sophomore whose passion is programming and cybersecurity! I love working with computers in order to solve problems and find vulnerabilities! I also enjoy music, and I only listen to The Beatles!
+            My dream career is definitely in the field of computers, and I aim to do something in programming or cybersecurity!</p>
+        </div>
+  
+        <div id="creations" class="section" style="display: none;">
+          <h2 style="text-align: center;">Creations</h2>
+
+          <h2>Programming</h2>
+          <h3 id="low-title">&gt Low level (C, Asm)</h3>
+          <div id="low-div" style="display: none;">
+            <a class="link" data-color="#0f1626" data-icon="media/icons/replit.png" href="https://replit.com/@JuanR4140/CPU-Something" target="_blank">Custom CPU Emulator and Assembler</a>
+            <p>Created: Sep 5, 2023<br>Updated: Sep 15, 2023</p>
+            <p>A Custom CPU with its own instruction set, emulator, and assembler. It has its own assembly-like language and features a 20x10 'display', which allows for small, simple programs. Planning to adopt into something greater than just a small display.</p>
+            
+            <br><br>
+            
+            <a class="link" data-color="#0f1626" data-icon="media/icons/replit.png" href="https://replit.com/@JuanR4140/OS" target="_blank">Operating System</a>
+            <p>Created: Dec 12, 2021<br>Updated: Dec 30, 2022</p>
+            <p>An operating system that jumps from 16-bit Real Mode to 32-bit Protected Mode. Has been in development since mid 8th grade, adding keyboard and printing support at mid 9th grade. Can currently read user input and respond accordingly.</p>
+
+            <br><br>
+          </div>
+          
+          <h3 id="web-title">&gt Web</h3>
+          <div id="web-div" style="display: none;">
+            <a class="link" data-color="user" data-icon="media/images/pfp.png" href="https://tell-it.juanr4140.repl.co/" target="_blank">Tell It!</a>
+            <p>Created: 2020<br>Updated: December 2022</p>
+            <p>An on and off project, Tell It! is a small social media website which features login and sign up, ability to post and view posts, and like them. It is fairly simple, only being written in HTML5, but posting and viewing posts works.</p>
+          </div>
+          <!--<h2>C</h2>
+          <a class="link" data-color="#0f1626" data-icon="media/icons/replit.png" href="https://replit.com/@JuanR4140/OS" target="_blank">Operating System</a>
+          <p>Created: Dec 12, 2021<br>Updated: Dec 30, 2022</p>
+          <p>An operating system that jumps from 16-bit Real Mode to 32-bit Protected Mode. Has been in development since mid 8th grade, adding keyboard and printing support at mid 9th grade. Can currently read user input and respond accordingly.</p>
+          <!--<p>An operating system I briefly developed upon learning low level architecture, unfortunately stopping due to failure of the IRQ1 keyboard implementation. Currently thinking re-doing it with keyboard support.</p>
+
+          <br>
+          <h2>Game Dev</h2>
+          <a class="link" data-color="user" data-icon="media/images/pfp.png" href="https://papergames.juanr4140.com" target="_blank">https://papergames.juanr4140.com (W.I.P)</a>
+          <p>Created: April 5, 2023<br>Updated: April 5, 2023</p>
+          <p>In elementary school, I always used to do literal simple paper games for my friends and I to play. Now, I come back to the idea to digitize and redefine said "paper games" for the simplicity and enjoyability they can be.</p>-->
+        </div>
+  
+        <div id="thoughts" class="section" style="display: none;">
+          <h2 style="text-align: center;">Thoughts</h2>
+          <!--<p>'Thoughts' was a past section of juanr4140.u8.lc with diary-like entries. Plans to re-implement the system are still in place, but will take time as decisions are made design-wise.</p>-->
+          <div style="text-align: center;">
+            <a class="link" data-color="user" data-icon="media/images/pfp.png" href="thought/2024/4/24.html">2024-4-24: To My Friend Mike</a><br><br>
+            <a class="link" data-color="user" data-icon="media/images/pfp.png" href="thought/2024/3/18.html">2024-3-18: I'm Officially GFACT Certified!</a><br><br>
+	          <a class="link" data-color="user" data-icon="media/images/pfp.png" href="thought/2024/3/13.html">2024-3-13: My Mom Hates Linux Now...</a><br><br>
+	          <a class="link" data-color="user" data-icon="media/images/pfp.png" href="thought/2024/2/22.html">2024-2-22: New Year New Me!</a><br><br>
+            <a class="link" data-color="user" data-icon="media/images/pfp.png" href="thought/2023/12/27.html">2023-12-27: Goodbye, Replit</a><br><br>
+            <a class="link" data-color="user" data-icon="media/images/pfp.png" href="thought/2023/12/25.html">2023-12-25: Merry 2023 Christmas! (Best present ever!)</a><br><br>
+            <a class="link" data-color="user" data-icon="media/images/pfp.png" href="thought/2023/12/23.html">2023-12-23: A Late 2023 Recap After Midnight</a><br><br>
+            <a class="link" data-color="user" data-icon="media/images/pfp.png" href="thought/2023/5/11.html">2023-5-08: School IDs are (mostly) ineffective</a><br><br>
+            <a class="link" data-color="user" data-icon="media/images/pfp.png" href="thought/2023/4/21.html">2023-4-21: A Year In High-School</a><br><br><br><br>
+            <p>| juanr4140.u8.lc archive |</p>
+            <a class="link" data-color="user" data-icon="media/images/pfp.png" href="thought/2022/10/31.html">2022-10-31: Getting Mentored By A Mentor</a><br><br>
+            <a class="link" data-color="user" data-icon="media/images/pfp.png" href="thought/2022/10/27.html">2022-10-27: The Big Break-Through</a><br><br>
+            <a class="link" data-color="user" data-icon="media/images/pfp.png" href="thought/2022/10/25.html">2022-10-25: October's Halloween</a><br><br>
+            <a class="link" data-color="user" data-icon="media/images/pfp.png" href="thought/2022/9/29.html">2022-9-29: Wait September is already over?</a><br><br>
+            <a class="link" data-color="user" data-icon="media/images/pfp.png" href="thought/2022/9/2.html">2022-9-2: Juan Meets Music</a><br><br>
+            <a class="link" data-color="user" data-icon="media/images/pfp.png" href="thought/2022/8/30.html">2022-8-30: Thoughts about Thoughts</a><br><br>
+            <a class="link" data-color="user" data-icon="media/images/pfp.png" href="thought/2022/8/29.html">2022-8-29: First thoughts post wow</a><br><br>
+            <a class="link" data-color="user" data-icon="media/images/pfp.png" href="thought/2022/8/28.html">2022-8-28: Hello World!</a><br><br>
+          </div>
+        </div>
+
+      </div>
+      <!--<h4 style="position: relative; right: 3rem; margin-bottom: 5px;">>> High school freshman</h4>
+      <h4 style="position: relative; right: 3rem; margin-top: 0;">>> Programmer, musician (ish)</h4>-->
+    </div>
+    <!--<h3>High school freshman</h3> <--cool white text next to pfp effect-->
+  </div>
+  
+  <script src="script.js"></script>
+  <script src="handle_creations.js"></script>
+
+ <!--
+  This script places a badge on your repl's full-browser view back to your repl's cover
+  page. Try various colors for the theme: dark, light, red, orange, yellow, lime, green,
+  teal, blue, blurple, magenta, pink!
+
+  <script src="https://replit.com/public/js/replit-badge.js" theme="blue" defer></script> -->
+</body>
+
+</html>

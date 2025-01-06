@@ -1,5 +1,5 @@
-import { typewrite } from './lib/typewrite-tools/typewrite.js';
-import { typeerase } from './lib/typewrite-tools/typeerase.js';
+import { typewrite } from '../lib/typewrite-tools/typewrite.js';
+import { typeerase } from '../lib/typewrite-tools/typeerase.js';
 
 let greet = async () => {
     await new Promise(resolve => setTimeout((resolve), 750));
@@ -13,20 +13,6 @@ let greet = async () => {
     typeerase("greet-greet");
     await new Promise(resolve => setTimeout((resolve), 1000));
     document.querySelector("#greet-container").remove();
-}
-
-window.switchTab = (tab, idx) => {
-    let sections = document.querySelectorAll(".section");
-    let buttons = document.querySelectorAll(".btn");
-
-    for(let i = 0; i < sections.length; i++){
-        sections[i].style.display = "none";
-        buttons[i].style.borderBottomStyle = "none";
-    }
-
-    document.querySelector(`#${tab}`).style.display = "block";
-    buttons[idx].style.borderBottomColor = "white";
-    buttons[idx].style.borderBottomStyle = "solid";
 }
 
 let main = async () => {
@@ -51,26 +37,6 @@ let main = async () => {
 
     document.querySelectorAll(".btn")[0].style.borderBottomColor = "white";
     document.querySelectorAll(".btn")[0].style.borderBottomStyle = "solid";
-
-    let titles = ["low", "web"];
-
-    for(let i = 0; i < titles.length; i++){
-      document.querySelector(`#${titles[i]}-title`).style.cursor = "pointer";
-
-      document.querySelector(`#${titles[i]}-title`).addEventListener("click", () => {
-        let el = document.querySelector(`#${titles[i]}-div`);
-        let ti = document.querySelector(`#${titles[i]}-title`);
-
-        el.style.display = ( el.style.display == "none" ? "block" : "none" );
-
-        if(el.style.display == "none"){
-          ti.innerText = ti.innerText.replace("^", ">");
-        }else{
-          ti.innerText = ti.innerText.replace(">", "^");
-        }
-
-      });
-    }
 }
 
 main();
